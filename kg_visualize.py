@@ -8,7 +8,7 @@ from sklearn.manifold import TSNE
 import numpy as np
 import random
 
-def transe_embeddings(graph, dim=64):
+def random_embeddings(graph, dim=64):
     embeddings = {}
     for node in graph.nodes():
         embeddings[node] = np.random.uniform(-1, 1, dim)
@@ -46,8 +46,8 @@ def generate_node_visualization(graph, node_list, dim=64):
             nodes_to_include.update(graph.neighbors(node))
     subgraph = graph.subgraph(nodes_to_include)
 
-    # Computing embeddings via TransE
-    embeddings = transe_embeddings(subgraph, dim=dim)
+    # Computing embeddings via random embedding
+    embeddings = random_embeddings(subgraph, dim=dim)
 
     # Reduce to 2D using TSNE
     # Start: Generated via ChatGPT (Prompt: How to reduce transe to 2 dim and apply to networkx graph)
