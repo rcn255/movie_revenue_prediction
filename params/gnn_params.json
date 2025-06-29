@@ -1,0 +1,8 @@
+{
+  "lr": 0.05,
+  "hidden_channels": 64,
+  "num_layers": 2,
+  "max_epochs": 10000,
+  "early_stopping_patience": 50,
+  "model_name": "main_model"
+}

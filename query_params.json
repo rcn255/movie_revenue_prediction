@@ -1,0 +1,10 @@
+{
+    "movie": {
+        "runtime": 120,
+        "budget": 1000000,
+        "spoken_languages": ["en"],
+        "genres": ["Horror"]
+    },
+    "actors": ["Clancy Brown", "Mark Rolston", "Leonardo DiCaprio"],
+    "directors": ["Quentin Tarantino"]
+}
