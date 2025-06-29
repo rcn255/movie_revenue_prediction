@@ -3,7 +3,7 @@ Everything has been tested on a clean Python 3.8.10 env.
 Get Started:
 `pip install -r requirements.txt`
 
-On Linux, you can run `sh run_pipeline.sh` to run first 5 steps at once. Otherwise run them separately, in which case I recommend running the parameters in the examples.
+On Linux, you can run `sh run_pipeline.sh` to run first 5 steps at once, but you may want to comment out step 0 and 1 since the dataframe in "df" is already preprocessed. Otherwise you can run each step separately, in which case I recommend running the parameters in the examples.
 
 
 # Step 0: Downloading data
