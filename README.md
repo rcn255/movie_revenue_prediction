@@ -19,9 +19,9 @@ Example: `python one_preprocessing.py`
 Example: `python two_kg_creation.py combined_df base_kg`
 
 # Step 3: Application of logical knowledge on KG
-`three_kg_logical.py <kg_name> <IMDb rating>`
+`three_kg_logical.py <kg_name> <IMDb_rating>`
 - <kg_name> : knowledge graph (KG) stored in "kg" folder
-- <IMDb rating> : IMDb rating [0,10] to be used for determine capable actors
+- <IMDb_rating> : IMDb rating [0,10] to be used for determine capable actors
 Example: `python three_kg_logical.py base_kg 7`
 
 # Step 4: Application of PageRank to score actors
