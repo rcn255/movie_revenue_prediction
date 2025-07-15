@@ -9,7 +9,7 @@ On Linux, you can run `sh run_pipeline.sh` to run first 5 steps at once, but you
 # Step 0: Downloading data
 Example: `python zero_download_datasets.py`
 
-# Step 1: Downloading data
+# Step 1: Preprocessing
 Example: `python one_preprocessing.py`
 
 # Step 2: Knowledge graph creation
@@ -30,13 +30,13 @@ Example: `python three_kg_logical.py base_kg 7`
 - <alpha> : transportation parameter [0,1] for pagerank
 Example: `python four_kg_pagerank.py base_kg_logic 0.9`
 
-# Step 5: Downloading data
+# Step 5: Training a Graph Neural Network (GNN) to predict movie revenue
 `five_gnn.py <kg_name>`
 - <kg_name> : knowledge graph (KG) stored in "kg" folder
 - model and training parameters defined in "params/gnn_params.json"
 Example: `python five_gnn.py base_kg_logic_pagerank gnn_params`
 
-# Step 6: Downloading data
+# Step 6: Inference on GNN
 `six_use_gnn.py <gnn_params> <query_params>`
 - <gnn_params> : model parameters in "params/gnn_params.json"
 - <query_params> : query graph structure with movie features, actors and directors (must exist in the original KG)
